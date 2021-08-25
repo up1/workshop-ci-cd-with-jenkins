@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  jenkins_master:
+    image: my-jenkins
+    container_name: jenkins
+    user: root
+    environment:
+      - TZ=Asia/Bangkok
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+      - $HOME/jenkins/jenkins:/var/jenkins_home
+    ports:
+      - 127.0.0.1:2345:2345
+      - 8080:8080
+      - 50000:50000
+
+  jenkins_slave:
+    image: jenkins/inbound-agent
+    user: root
+    command: -url http://<master ip>:8080 <secret> worker01
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+      - $HOME/jenkins/jnlp_slave:/var/jenkins_home
