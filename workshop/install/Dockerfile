@@ -22,4 +22,4 @@ RUN curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-co
 RUN apt-get update && apt-get install -y docker-ce-cli make golang
 
 USER jenkins
-RUN jenkins-plugin-cli --plugins "blueocean:1.24.7 docker-workflow:1.26"
+RUN jenkins-plugin-cli --plugins "blueocean:1.24.8 docker-workflow:1.26"
