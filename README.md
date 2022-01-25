@@ -1,5 +1,5 @@
 # Workshop CI/CD with Jenkins
-* Install with Docker
+* [Install with Docker](https://github.com/up1/workshop-ci-cd-with-jenkins/tree/main/workshop/install)
 * Declarative pipeline
   * Structure of pipeline
     * Agent
