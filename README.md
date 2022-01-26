@@ -21,6 +21,7 @@
 * [Golang + DB](https://github.com/up1/workshop-devops-go)
 * [Demo pipeline](https://github.com/up1/demo-pipeline)
 * [Demo Go with SonarQube](https://github.com/up1/demo-go-sonarqube)
+* [Demo Spring Boot](https://gitlab.com/up11/demo-spring/)
 
 ## Reference course
 * [Introduction to CI/CD](https://github.com/up1/course-ci-cd-with-jenkins)
