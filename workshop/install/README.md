@@ -15,4 +15,6 @@ $docker container run -d -u 0:0 --group-add $(stat -c '%g' /var/run/docker.sock)
 
 $docker container ps
 $docker container logs jenkins --follow
+
+$docker container exec -it jenkins bash
 ```
