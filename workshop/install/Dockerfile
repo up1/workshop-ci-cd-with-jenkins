@@ -21,3 +21,4 @@ RUN curl -SL https://github.com/docker/compose/releases/download/v2.18.1/docker-
 
 RUN apt-get update && apt-get install -y docker-ce-cli make
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs
+RUN npm i -g newman
