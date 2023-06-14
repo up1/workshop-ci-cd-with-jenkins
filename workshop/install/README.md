@@ -18,3 +18,13 @@ $docker container logs jenkins --follow
 
 $docker container exec -it jenkins bash
 ```
+
+
+### Note for Windows ans Mac
+```
+// Windows
+docker container run -d -p 8080:8080 -v c:\\data\\dfdfdf:/var/jenkins_home --name jenkins my-jenkins
+
+// Mac
+docker container run -d -p 8080:8080 -v $(pwd)/temp:/var/jenkins_home --name jenkins my-jenkins
+```
